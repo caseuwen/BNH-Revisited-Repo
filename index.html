@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="ChenY">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bear Ninja Hunter Revisited</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Bear Ninja Hunter</h2>
+
+  <hr class="divider">
+
+  <ul>
+    <li>Bear beats Ninja</li>
+    <li>Ninja beats Hunter</li>
+    <li>Hunter beats Bear</li>
+  </ul>
+
+  <hr class="divider">
+
+  <!-- Game Buttons -->
+  <div class="button-container">
+    <button onclick="playGame('Bear')">Bear</button>
+    <button onclick="playGame('Ninja')">Ninja</button>
+    <button onclick="playGame('Hunter')">Hunter</button>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Results and scoreboard -->
+  <div id="results" class="results-box"></div>
+  <div id="scoreboard"></div>
+
+  <!-- Play again -->
+  <div id="playAgainContainer" style="display:none;">
+    <button onclick="resetGame()">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
